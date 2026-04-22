@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Advanced Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="header">
+                <h1>Calculator</h1>
+                <div class="mode-toggle">
+                    <button class="btn-mode" id="basicMode" data-mode="basic">Basic</button>
+                    <button class="btn-mode active" id="advancedMode" data-mode="advanced">Advanced</button>
+                </div>
+            </div>
+
+            <div class="display-section">
+                <div class="history-display" id="historyDisplay"></div>
+                <div class="main-display" id="mainDisplay">0</div>
+                <div class="previous-display" id="previousDisplay"></div>
+            </div>
+
+            <div class="memory-section">
+                <div class="memory-display">
+                    <span id="memoryValue">0</span>
+                </div>
+                <div class="memory-buttons">
+                    <button class="btn-memory" id="mc">MC</button>
+                    <button class="btn-memory" id="mr">MR</button>
+                    <button class="btn-memory" id="mplus">M+</button>
+                    <button class="btn-memory" id="mminus">M−</button>
+                </div>
+            </div>
+
+            <div class="buttons-section">
+                <div class="advanced-row" id="advancedRow">
+                    <button class="btn btn-function" data-action="sin">sin</button>
+                    <button class="btn btn-function" data-action="cos">cos</button>
+                    <button class="btn btn-function" data-action="tan">tan</button>
+                    <button class="btn btn-function" data-action="sqrt">√</button>
+                    <button class="btn btn-function" data-action="cbrt">∛</button>
+                </div>
+
+                <div class="row">
+                    <button class="btn btn-function" data-action="clear">C</button>
+                    <button class="btn btn-function" data-action="delete">DEL</button>
+                    <button class="btn btn-function" data-action="percent">%</button>
+                    <button class="btn btn-operator" data-operator="/">÷</button>
+                </div>
+
+                <div class="row">
+                    <button class="btn btn-number" data-number="7">7</button>
+                    <button class="btn btn-number" data-number="8">8</button>
+                    <button class="btn btn-number" data-number="9">9</button>
+                    <button class="btn btn-operator" data-operator="*">×</button>
+                </div>
+
+                <div class="row">
+                    <button class="btn btn-number" data-number="4">4</button>
+                    <button class="btn btn-number" data-number="5">5</button>
+                    <button class="btn btn-number" data-number="6">6</button>
+                    <button class="btn btn-operator" data-operator="-">−</button>
+                </div>
+
+                <div class="row">
+                    <button class="btn btn-number" data-number="1">1</button>
+                    <button class="btn btn-number" data-number="2">2</button>
+                    <button class="btn btn-number" data-number="3">3</button>
+                    <button class="btn btn-operator" data-operator="+">+</button>
+                </div>
+
+                <div class="row">
+                    <button class="btn btn-number btn-zero" data-number="0">0</button>
+                    <button class="btn btn-number" data-number=".">.</button>
+                    <button class="btn btn-function" data-action="power">x²</button>
+                    <button class="btn btn-equals" data-action="equals">=</button>
+                </div>
+
+                <div class="advanced-row-bottom" id="advancedRowBottom">
+                    <button class="btn btn-function" data-action="log">log</button>
+                    <button class="btn btn-function" data-action="ln">ln</button>
+                    <button class="btn btn-function" data-action="pi">π</button>
+                    <button class="btn btn-function" data-action="factorial">n!</button>
+                </div>
+            </div>
+
+            <div class="history-section">
+                <div class="history-header">
+                    <h3>History</h3>
+                    <button class="btn-clear-history" id="clearHistory">Clear</button>
+                </div>
+                <div class="history-list" id="historyList"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
